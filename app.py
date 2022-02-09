@@ -20,7 +20,7 @@ nltk.download('omw-1.4')
 
 app = Flask(__name__)
 
-CORS(app, origins=["http://127.0.0.1:3000"])
+CORS(app, origins=["http://127.0.0.1:3000", "https://cyberbullyngclassifier.herokuapp.com"])
 
 with open(
     join(dirname(realpath(__file__)), "models/tweet_classifier_model_pipeline.pkl"), "rb"
