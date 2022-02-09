@@ -31,23 +31,6 @@ with open(
 def index():
     return "Hello World!"
 
-# @app.route('/test', methods=['POST'])
-# def my_form_post():
-    
-#     text = request.form['text']
-#     nltk.download('vader_lexicon')
-#     from nltk.sentiment.vader import SentimentIntensityAnalyzer
-#     sid = SentimentIntensityAnalyzer()
-#     score = ((sid.polarity_scores(str(text))))['compound']
-#     print(score)
-#     if(score > 0):
-#         label = 'This sentence is positive'
-#     elif(score == 0):
-#         label = 'This sentence is neutral'
-#     else:
-#         label = 'This sentence is negative'
-    
-#     return { 'result': label }
 
 @app.route('/get-tweet', methods=['GET'])
 @cross_origin(supports_credentials=True)
