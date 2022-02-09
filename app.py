@@ -15,8 +15,8 @@ from nltk.stem.snowball import SnowballStemmer
 from nltk import word_tokenize
 from wordcloud import STOPWORDS
 
-if nltk.find('corpora/omw-1.4') == False:
-    nltk.download('omw-1.4')
+#if nltk.find('corpora/omw-1.4') == False:
+nltk.download('omw-1.4')
 
 app = Flask(__name__)
 
